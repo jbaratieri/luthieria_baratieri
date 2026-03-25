@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
+
+# Bloqueia arquivos técnicos que não precisam ser indexados
+Disallow: /vitrine.js
+Disallow: /footer.js
+Disallow: /image-modal
+Disallow: /logos/
+
+# Aponta para o sitemap principal
 Sitemap: https://luthieriabaratieri.com.br/sitemap.xml
