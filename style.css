@@ -137,6 +137,10 @@ img {
     background: #8c6a42;
 }
 
+.btn-blog {
+    background: var(--cor-neutra);
+}
+
 /* Seções */
 .sobre {
     background: linear-gradient(to bottom, #f4f0ea, #ffffff);

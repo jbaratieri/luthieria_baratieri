@@ -12,23 +12,42 @@
     <loc>https://loja.luthieriabaratieri.com.br/</loc>
     <priority>0.9</priority>
   </url>
+
+  <!-- Método -->
   <url>
-    <loc>https://loja.luthieriabaratieri.com.br/#vitrine</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://loja.luthieriabaratieri.com.br/#servicos</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://loja.luthieriabaratieri.com.br/#contato</loc>
-    <priority>0.8</priority>
+    <loc>https://metodo.luthieriabaratieri.com.br/lp</loc>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Método (subdomínio) -->
+  <!-- Blog -->
   <url>
-    <loc>https://metodo.luthieriabaratieri.com.br/lp.html</loc>
-    <priority>0.9</priority>
+    <loc>https://luthieriabaratieri.com.br/blog/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/como-escolher-violao-artesanal.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/historia-da-luteria-no-brasil.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/o-que-e-luteria.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/ferramentas-para-luthieria-iniciante.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
