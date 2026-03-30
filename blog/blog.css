@@ -38,3 +38,17 @@
         color: #0066cc;
         text-decoration: none;
     }
+    .serie {
+    font-size: 14px;
+    color: #a19f9f;
+}
+
+.etapa {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.passo {
+    font-size: 15px;
+    color: #a19f9f;
+}
