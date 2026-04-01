@@ -263,6 +263,33 @@ img {
   opacity: 0.8;
 }
 
+/* Seção SEO */
+.seo-texto {
+    background: linear-gradient(to bottom, #ffffff, #f4f0ea);
+    border-top: 1px solid #e5e0d8;
+}
+
+.seo-texto h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--cor-primaria);
+    font-size: 1.6rem;
+}
+
+.seo-texto p {
+    max-width: 820px;
+    margin: 0 auto 18px auto;
+    line-height: 1.8;
+    font-size: 0.98rem;
+    color: #555;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .seo-texto p {
+        font-size: 1.05rem;
+    }
+}
 
 
 /* Rodapé */
