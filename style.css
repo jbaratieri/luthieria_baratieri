@@ -1,20 +1,18 @@
-/* Paleta */
+/* =========================
+   VARIÁVEIS
+   ========================= */
 :root {
     --cor-primaria: #5c3b1e;
-    /* marrom */
     --cor-secundaria: #a67c52;
-    /* dourado */
     --cor-fundo: #f4f0ea;
-    /* bege */
     --cor-oliva: #6b7a3a;
-    /* verde oliva */
     --cor-vinho: #7a2f2f;
-    /* vinho */
     --cor-neutra: #666666;
-    /* cinza */
 }
 
-/* Globais */
+/* =========================
+   GLOBAIS
+   ========================= */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -22,8 +20,7 @@ body {
     color: var(--cor-neutra);
 }
 
-h1,
-h2 {
+h1, h2 {
     font-family: 'Playfair Display', serif;
     color: var(--cor-primaria);
 }
@@ -39,30 +36,84 @@ img {
     border-radius: 8px;
 }
 
-/* Layout responsivo */
+/* GRID */
 .grid {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
-    /* mobile first */
 }
 
-/* Hero */
-.hero {
+/* =========================
+   HEADER
+   ========================= */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: auto;
+    max-height: 190px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #8b5a2b;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+    .hero {
     position: relative;
     background: url('img/hero.webp') center/cover no-repeat;
-    min-height: 70vh;
+    min-height: 460px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 50px 20px;
 }
+
+.logo-hero {
+    max-width: 260px;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+
 
 .hero .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(rgba(92, 59, 30, 0.8), rgba(92, 59, 30, 0.6));
+    background: linear-gradient(rgba(92,59,30,0.8), rgba(92,59,30,0.6));
 }
 
 .hero-content {
@@ -71,33 +122,9 @@ img {
     padding: 20px;
 }
 
-.hero-buttons .btn {
-    margin: 10px;
-}
-
 .logo-hero {
-  max-width: 400px;
-  width: 90%;
-}
-
-
-.hero-title {
-    font-size: 2rem;
-    color: var(--cor-primaria); /* marrom */
-    margin-top: -20px;
-    margin-bottom: 15px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-.hero-title {
-    font-size: 1.8rem;
-    color: var(--cor-primaria);
-    margin-bottom: 10px;
-    line-height: 1.3;
+    max-width: 400px;
+    width: 90%;
 }
 
 .hero-subtitle {
@@ -107,13 +134,9 @@ img {
     color: #3e3e3e;
 }
 
-@media (min-width: 768px) {
-    .hero-title {
-        font-size: 2.8rem;
-    }
-}
-
-/* Botões */
+/* =========================
+   BOTÕES
+   ========================= */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -122,7 +145,6 @@ img {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    transition: background 0.3s;
 }
 
 .btn:hover {
@@ -133,15 +155,13 @@ img {
     background: var(--cor-secundaria);
 }
 
-.btn-secondary:hover {
-    background: #8c6a42;
-}
-
 .btn-blog {
     background: var(--cor-neutra);
 }
 
-/* Seções */
+/* =========================
+   SEÇÕES
+   ========================= */
 .sobre {
     background: linear-gradient(to bottom, #f4f0ea, #ffffff);
 }
@@ -155,125 +175,44 @@ img {
     background: linear-gradient(135deg, #6b7a3a, #8ca65a);
     color: white;
     padding: 40px 20px;
-    /* adiciona espaço interno */
-
 }
-
-
-.metodo .btn {
-    background: var(--cor-secundaria);
-}
-
-.afiliados {
-
-  font-size: 0.9rem;
-  margin-top: 20px;
-  color: #fff; /* branco para contraste */
-}
-.afiliados a {
-  color: #d4a373; /* dourado/marrom claro */
-  font-weight: bold;
-  margin-top: 20px;
-}
-.afiliados a {
-  display: inline-block;
-  padding: 6px 12px;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.85rem;
-}
-.afiliados a:hover {
-  background-color: #fff;
-  color: #3b3b2f; /* verde oliva escuro */
-}
-
-
 
 .loja {
     background: linear-gradient(to bottom, #ffffff, #f4f0ea);
 }
 
-/* Serviços */
 .servicos {
     background: linear-gradient(135deg, #eef2e3, #dfe6c8);
 }
 
-.servicos h2 {
-    color: var(--cor-primaria);
-}
-
-.servicos p {
-    color: #4a4a4a;
-}
-
+/* =========================
+   FORMULÁRIO
+   ========================= */
 .form-contato {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .form-contato .linha {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
-.form-contato input, 
+.form-contato input,
 .form-contato textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
 }
 
-.form-contato textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.form-contato .btn {
-  align-self: flex-start;
-}
-
-.redes {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.social.instagram {
-  color: #e1306c; /* rosa Instagram */
-}
-
-.social.whatsapp {
-  color: #25d366; /* verde WhatsApp */
-}
-
-.social:hover {
-  opacity: 0.8;
-}
-
-/* Seção SEO */
+/* =========================
+   SEO TEXTO
+   ========================= */
 .seo-texto {
     background: linear-gradient(to bottom, #ffffff, #f4f0ea);
     border-top: 1px solid #e5e0d8;
-}
-
-.seo-texto h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    color: var(--cor-primaria);
-    font-size: 1.6rem;
 }
 
 .seo-texto p {
@@ -281,14 +220,7 @@ img {
     margin: 0 auto 18px auto;
     line-height: 1.8;
     font-size: 0.98rem;
-    color: #555;
     text-align: justify;
-}
-
-@media (min-width: 768px) {
-    .seo-texto p {
-        font-size: 1.05rem;
-    }
 }
 
 /* =========================
@@ -367,7 +299,6 @@ img {
     margin-top: 10px;
     line-height: 1.4;
 }
-
 /* =========================
    FOOTER MOBILE
    ========================= */
@@ -417,7 +348,6 @@ img {
   }
 }
 
-/* Desktop */
 @media (min-width: 768px) {
     .grid {
         grid-template-columns: 1fr 1fr;
@@ -425,12 +355,15 @@ img {
         align-items: center;
     }
 
+   
     .hero {
-        min-height: 90vh;
+        min-height: 55vh;
+        padding: 60px 20px;
     }
+
 
     .container {
         padding: 60px 20px;
     }
-
+    
 }
