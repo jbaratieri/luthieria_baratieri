@@ -63,7 +63,7 @@ img {
 
 .logo img {
     width: auto;
-    max-height: 100px;
+    max-height: 115px;
 }
 
 .menu {
@@ -158,6 +158,13 @@ img {
 
 .btn-blog {
     background: var(--cor-neutra);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* =========================
@@ -434,5 +441,10 @@ img {
         width: 100%;
         justify-content: center;
         margin-bottom: 10px;
+    }
+
+     .hero-buttons {
+        flex-direction: column;
+        gap: 12px; /* espaçamento vertical */
     }
 }
