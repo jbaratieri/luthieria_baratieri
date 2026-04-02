@@ -63,12 +63,13 @@ img {
 
 .logo img {
     width: auto;
-    max-height: 190px;
+    max-height: 90px;
 }
 
 .menu {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .menu a {
@@ -224,6 +225,60 @@ img {
 }
 
 /* =========================
+   REDES SOCIAIS
+   ========================= */
+
+.redes {
+    margin-top: 20px;
+}
+
+.redes p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--cor-primaria);
+}
+
+.social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 15px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Instagram */
+.social.instagram {
+    background: #f5f0ea;
+    color: #e1306c;
+}
+
+.social.instagram:hover {
+    background: #e1306c;
+    color: #fff;
+}
+
+/* WhatsApp */
+.social.whatsapp {
+    background: #f5f0ea;
+    color: #25d366;
+}
+
+.social.whatsapp:hover {
+    background: #25d366;
+    color: #fff;
+}
+
+/* Ícones */
+.social i {
+    font-size: 16px;
+}
+
+/* =========================
    RODAPÉ – LUTHIERIA BARATIERI
    ========================= */
 
@@ -355,6 +410,11 @@ img {
         align-items: center;
     }
 
+    .logo img {
+    width: auto;
+    max-height: 190px;
+}
+
    
     .hero {
         min-height: 55vh;
@@ -366,4 +426,13 @@ img {
         padding: 60px 20px;
     }
     
+}
+
+@media (max-width: 768px) {
+    .social {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
