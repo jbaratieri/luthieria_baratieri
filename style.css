@@ -448,3 +448,80 @@ img {
         gap: 12px; /* espaçamento vertical */
     }
 }
+/* HEADER */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo img {
+    height: 190px;
+}
+
+/* MENU DESKTOP */
+.menu {
+    display: flex;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* BOTÃO HAMBURGUER */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* =====================
+   MOBILE
+   ===================== */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #ffffff;
+        border-top: 1px solid #eee;
+    }
+
+    .menu a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        margin: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+    }
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+}
