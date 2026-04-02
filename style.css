@@ -416,6 +416,7 @@ img {
     padding-top: 0;
   }
 }
+
 /* Desktop */
 @media (min-width: 768px) {
     .grid {
