@@ -232,3 +232,22 @@
     padding-top: 0;
   }
 }
+.faq {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.faq p {
+    margin-top: 5px;
+    color: #444;
+}
