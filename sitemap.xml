@@ -26,6 +26,13 @@
   </url>
 
   <url>
+    <loc>https://luthieriabaratieri.com.br/blog/serie-como-construir-violao</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://luthieriabaratieri.com.br/blog/como-escolher-violao-artesanal</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -73,5 +80,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/retificar-colar-headstock-violao</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
