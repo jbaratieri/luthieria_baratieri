@@ -5,6 +5,18 @@
       "source": "/:path.html",
       "destination": "/:path",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.luthieriabaratieri.com.br"
+        }
+      ],
+      "destination": "https://luthieriabaratieri.com.br/$1",
+      "permanent": true
     }
   ]
 }
+
