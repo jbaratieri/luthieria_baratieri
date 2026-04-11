@@ -94,8 +94,24 @@
   </url>
   <url>
     <loc>https://luthieriabaratieri.com.br/blog/madeiras-para-braco-violao</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/headstock-e-troculo-braco-violao</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/esquadrejar-e-planejar-o-braco</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
 </urlset>
