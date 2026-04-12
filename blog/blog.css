@@ -1,3 +1,10 @@
+:root {
+  --marrom-madeira: #6b4f3a;
+  --verde-natural: #2f5d3a;
+  --terracota: #a05a44;
+  --azul-suave: #3a6f8f;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -274,23 +281,30 @@ a {
 }
 
 .conclusao {
-  background: #f5f5f5;
+  background: #f7f3ef;        /* bege bem suave */
   padding: 25px;
-  border-left: 4px solid #8b5a2b;
+  border-left: 4px solid #6b4f3a; /* marrom madeira mais profundo */
+  margin: 40px 0;
+}
+
+.cta {
+  background: #f4faf6;        /* verde bem leve */
+  padding: 25px;
+  border-left: 4px solid #2f5d3a; /* verde mais sólido */
   margin: 40px 0;
 }
 
 .serie {
-  background: #fff8f0;
+  background: #fff6ee;        /* pêssego suave */
   padding: 25px;
-  border-left: 4px solid #c97d2a;
+  border-left: 4px solid #a05a44; /* terracota elegante */
   margin: 40px 0;
 }
 
 .faq {
-  background: #f0f4f8;
+  background: #eef4f8;        /* azul clarinho mais clean */
   padding: 25px;
-  border-left: 4px solid #2a6f97;
+  border-left: 4px solid #3a6f8f; /* azul mais sóbrio */
   margin: 40px 0;
 }
 
@@ -299,9 +313,9 @@ a {
 }
 
 .institucional {
-  background: #fafafa;
+  background: #f9f7f5;
   padding: 25px;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #6b4f3a;
   margin-top: 50px;
   font-size: 0.95em;
   color: #444;
