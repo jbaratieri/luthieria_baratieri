@@ -8,6 +8,10 @@
     --cor-oliva: #6b7a3a;
     --cor-vinho: #7a2f2f;
     --cor-neutra: #666666;
+    --cor-primaria: #5c3b1e;
+    --cor-secundaria: #a67c52;
+    --cor-texto-claro: #f5efe6;
+    --cor-texto-suave: #e6dccf;
 }
 
 /* =========================
@@ -95,7 +99,7 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: var(--cor-texto-claro);
     padding: 50px 20px;
 }
 
@@ -107,6 +111,7 @@ img {
 .hero-title {
     font-size: 2.2rem;
     margin-bottom: 10px;
+    color: #f5efe6;
 }
 
 
@@ -132,40 +137,79 @@ img {
     max-width: 700px;
     margin: 0 auto 20px auto;
     font-size: 1rem;
-    color: #3e3e3e;
+    color: var(--cor-texto-suave)
 }
 
 /* =========================
    BOTÕES
    ========================= */
+/* BASE */
+/* BASE */
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: var(--cor-primaria);
-    color: white;
-    text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-.btn:hover {
-    background: #3e2813;
-}
-
-.btn-secondary {
+/* 🥇 PRIMARY (CTA forte) */
+.btn-primary {
     background: var(--cor-secundaria);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+.btn-primary:hover {
+    background: #8c6239;
+    transform: translateY(-1px);
+}
+
+/* 🥈 SECONDARY (adaptável ao fundo) */
+.btn-secondary {
+    background: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* 🥉 BLOG (mais leve ainda) */
 .btn-blog {
-    background: var(--cor-neutra);
+    background: transparent;
+    border: none;
+    color: var(--cor-texto-suave);
+    text-decoration: underline;
+    padding: 12px 8px;
+}
+
+.btn-blog:hover {
+    color: #fff;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 12px;
+    gap: 16px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
+
+
+.link-afiliado {
+    color: var(--cor-texto-claro);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.link-afiliado:hover {
+    color: var(--cor-vinho);
+    font-size: 15px;
+}
+
 
 /* =========================
    SEÇÕES
@@ -196,6 +240,14 @@ img {
 /* =========================
    FORMULÁRIO
    ========================= */
+
+.prova-social {
+    text-align: center;
+    font-size: 14px;
+    color: var(--cor-neutra);
+    margin-bottom: 20px;
+}
+
 .form-contato {
     display: flex;
     flex-direction: column;
@@ -235,17 +287,20 @@ img {
 }
 
 
+
 /* =========================
    REDES SOCIAIS
    ========================= */
 
 .redes {
     margin-top: 20px;
+    text-align: center;
 }
 
 .redes p {
     margin-bottom: 10px;
     font-weight: 500;
+    margin: auto;
     color: var(--cor-primaria);
 }
 
@@ -335,7 +390,7 @@ img {
 .footer a {
     display: block;
     color: #e0d6c8;
-    text-decoration: none;
+    text-decoration: underline;
     margin-bottom: 8px;
     transition: 0.2s;
 }
@@ -372,9 +427,10 @@ img {
 }
 
 .afiliados {
-    font-size: 13px;
-    margin-top: 10px;
-    line-height: 1.4;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--cor-texto-suave);
+    line-height: 1.6;
 }
 /* =========================
    FOOTER MOBILE
