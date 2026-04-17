@@ -105,13 +105,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  
   <url>
     <loc>https://luthieriabaratieri.com.br/blog/esquadrejar-e-planejar-o-braco</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-
+  <url>
+    <loc>https://luthieriabaratieri.com.br/blog/como-fazer-tampo-violao</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -104,10 +104,7 @@ a {
   text-decoration: none;
 }
 
-.serie {
-  font-size: 14px;
-  color: #a19f9f;
-}
+
 
 .etapa {
   font-size: 15px;
@@ -295,6 +292,8 @@ a {
 }
 
 .serie {
+  font-size: 15px;
+  color: #787575;
   background: #fff6ee;        /* pêssego suave */
   padding: 25px;
   border-left: 4px solid #a05a44; /* terracota elegante */
