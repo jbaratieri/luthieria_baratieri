@@ -22,8 +22,10 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
 }
 
 nav a {
@@ -199,6 +201,10 @@ a {
 
 @media (max-width: 768px) {
 
+  nav {
+    display: block;
+  }
+
   .footer {
     text-align: center;
     padding: 30px 15px;
@@ -278,32 +284,40 @@ a {
 }
 
 .conclusao {
-  background: #f7f3ef;        /* bege bem suave */
+  background: #f7f3ef;
+  /* bege bem suave */
   padding: 25px;
-  border-left: 4px solid #6b4f3a; /* marrom madeira mais profundo */
+  border-left: 4px solid #6b4f3a;
+  /* marrom madeira mais profundo */
   margin: 40px 0;
 }
 
 .cta {
-  background: #f4faf6;        /* verde bem leve */
+  background: #f4faf6;
+  /* verde bem leve */
   padding: 25px;
-  border-left: 4px solid #2f5d3a; /* verde mais sólido */
+  border-left: 4px solid #2f5d3a;
+  /* verde mais sólido */
   margin: 40px 0;
 }
 
 .serie {
   font-size: 15px;
   color: #787575;
-  background: #fff6ee;        /* pêssego suave */
+  background: #fff6ee;
+  /* pêssego suave */
   padding: 25px;
-  border-left: 4px solid #a05a44; /* terracota elegante */
+  border-left: 4px solid #a05a44;
+  /* terracota elegante */
   margin: 40px 0;
 }
 
 .faq {
-  background: #eef4f8;        /* azul clarinho mais clean */
+  background: #eef4f8;
+  /* azul clarinho mais clean */
   padding: 25px;
-  border-left: 4px solid #3a6f8f; /* azul mais sóbrio */
+  border-left: 4px solid #3a6f8f;
+  /* azul mais sóbrio */
   margin: 40px 0;
 }
 
