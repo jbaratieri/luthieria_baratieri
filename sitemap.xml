@@ -25,7 +25,7 @@
   <!-- Blog -->
   <url>
     <loc>https://luthieriabaratieri.com.br/blog/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <priority>1.0</priority>
   </url>
 
@@ -38,7 +38,7 @@
 
   <url>
     <loc>https://luthieriabaratieri.com.br/blog/serie-como-construir-violao</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -135,4 +135,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+   <url>
+    <loc>https://luthieriabaratieri.com.br/blog/tampo-varetas-e-leque-harmonico</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://luthieriabaratieri.com.br/blog/como-fazer-tampo-violao-guia-completo</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+ 
 </urlset>

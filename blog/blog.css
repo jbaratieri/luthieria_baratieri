@@ -426,3 +426,30 @@ figcaption {
 .cta-alternativa a:hover {
     color: #3e2813;
 }
+
+.post-destaque {
+  border: 2px solid #ddd;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.post-destaque h3 {
+  margin-top: 0;
+}
+
+.post-destaque a {
+  text-decoration: none;
+}
+
+.post-destaque .data {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 8px;
+}
+
+.post-destaque {
+  border-left: 4px solid #2c7be5;
+  background: #f5f9ff;
+}
