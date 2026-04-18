@@ -3,6 +3,16 @@
   --verde-natural: #2f5d3a;
   --terracota: #a05a44;
   --azul-suave: #3a6f8f;
+  --cor-primaria: #5c3b1e;
+  --cor-secundaria: #a67c52;
+  --cor-fundo: #f4f0ea;
+  --cor-oliva: #6b7a3a;
+  --cor-vinho: #7a2f2f;
+  --cor-neutra: #666666;
+  --cor-primaria: #5c3b1e;
+  --cor-secundaria: #a67c52;
+  --cor-texto-claro: #f5efe6;
+  --cor-texto-suave: #e6dccf;
 }
 
 body {
@@ -15,7 +25,7 @@ body {
 
 header {
   background: linear-gradient(to top, #5c3b1e, #3e2813);
-  color: #fff;
+  color: var(--cor-texto-suave);
   padding: 20px;
   text-align: center;
 }
@@ -29,7 +39,7 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: var(--cor-texto-suave);
   margin: 5px 10px;
   text-decoration: none;
   transition: 0.3s;
@@ -57,7 +67,7 @@ h1 {
 }
 
 .post-list li {
-  background: #fff;
+  background: var(--cor-fundo);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 6px;
@@ -147,7 +157,7 @@ a {
 .footer h3 {
   margin-bottom: 12px;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--cor-texto-claro);
 }
 
 .footer a {
@@ -159,7 +169,7 @@ a {
 }
 
 .footer a:hover {
-  color: #ffffff;
+  color: var(--cor-texto-claro);
   transform: translateX(3px);
 }
 
@@ -203,6 +213,38 @@ a {
 
   nav {
     display: block;
+  }
+
+  .serie-nav {
+    margin: 28px 0;
+    padding-left: 12px;
+    border-left: 3px solid var(--terracota);
+    /* bem suave */
+    font-size: 0.95rem;
+  }
+
+  .serie-nav p {
+    margin: 10px 0;
+  }
+
+  .serie-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor-texto-suave);
+    padding: 2px 0;
+    transition: 0.2s;
+  }
+
+  .serie-nav a:hover {
+    color: #7a5230;
+    text-decoration: underline;
+  }
+
+  .serie-nav span {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--cor-neutra);
+    margin-top: 2px;
   }
 
   .footer {
@@ -350,4 +392,37 @@ figcaption {
   color: #666;
   margin-top: 8px;
   line-height: 1.4;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+    transform: translateY(-1px);
+}
+
+.cta-alternativa {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #171515;
+}
+
+.cta-alternativa a {
+    color: #5c3b1e;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.cta-alternativa a:hover {
+    color: #3e2813;
 }
