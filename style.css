@@ -93,7 +93,6 @@ img {
 
     .hero {
     position: relative;
-    background: url('img/hero.webp') center/cover no-repeat;
     min-height: 460px;
     display: flex;
     align-items: center;
