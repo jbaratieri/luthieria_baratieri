@@ -601,6 +601,18 @@ img {
     margin: 5px 0;
 }
 
+/* Teclado / leitores de ecrã: foco visível no menu mobile */
+.menu-toggle:focus-visible {
+    outline: 2px solid #5c3b1e;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.menu a:focus-visible {
+    outline: 2px solid #5c3b1e;
+    outline-offset: -4px;
+}
+
 /* BOTÃO FLUTUANTE WHATSAPP */
 .float-whatsapp {
     position: fixed;

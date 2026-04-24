@@ -119,13 +119,14 @@
             </div>
 
 
-            <button class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Menu de navegação"
+                aria-controls="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </button>
 
-            <nav class="menu" id="menu">
+            <nav class="menu" id="menu" aria-label="Principal">
                 <a href="/">Início</a>
                 <a href="/area-de-atuacao-luthieria">Atendimento</a>
                 <a href="/blog/">Blog</a>
@@ -322,7 +323,7 @@
 
 
                 <h2>Método Baratieri – Construção de Instrumentos de Cordas</h2>
-                <p>Pare de se perder na construção de instrumentos de cordas. Tenha um método claro do início ao fim.
+                <p>Pare de se perder na construção de instrumentos de cordas. Tenha um método claro do início ao fim.</p>
 
                 <p>O <strong>Método Baratieri</strong> é um aplicativo interativo criado para ajudar luthiers e
                     estudantes na <strong>construção de violões, violas, cavaquinhos e ukuleles</strong>, organizando
@@ -507,12 +508,51 @@
     </script>
 
     <script>
-        const toggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
+        (function () {
+            const toggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('menu');
+            const mq = window.matchMedia('(max-width: 768px)');
 
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
+            function setExpanded(open) {
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+
+            function closeMenu() {
+                if (!menu.classList.contains('active')) return;
+                menu.classList.remove('active');
+                setExpanded(false);
+            }
+
+            toggle.addEventListener('click', function () {
+                const wasOpen = menu.classList.contains('active');
+                menu.classList.toggle('active');
+                const nowOpen = menu.classList.contains('active');
+                setExpanded(nowOpen);
+                if (nowOpen && !wasOpen && mq.matches) {
+                    menu.querySelector('a')?.focus();
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (mq.matches) closeMenu();
+                });
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && menu.classList.contains('active') && mq.matches) {
+                    closeMenu();
+                    toggle.focus();
+                }
+            });
+
+            mq.addEventListener('change', function (e) {
+                if (!e.matches) {
+                    menu.classList.remove('active');
+                    setExpanded(false);
+                }
+            });
+        })();
     </script>
 
     <div class="float-whatsapp">
