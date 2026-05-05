@@ -163,5 +163,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+   <url>
+    <loc>https://luthieriabaratieri.com.br/blog/madeira-para-tampo-violao</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
  
 </urlset>

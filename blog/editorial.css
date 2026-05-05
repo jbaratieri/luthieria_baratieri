@@ -1,0 +1,526 @@
+:root {
+    --bg: #faf7f2;
+    --surface: #ffffff;
+    --text: #1a1612;
+    --muted: #6b5e52;
+    --accent: #8b4513;
+    --accent-light: #c4813a;
+    --accent-bg: #f5ede0;
+    --border: #e0d5c5;
+    --wood-dark: #5c3317;
+    --wood-mid: #8b5e3c;
+    --wood-light: #c4956a;
+    --radius: 4px;
+    --max-w: 780px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ── HEADER ── */
+.site-header {
+    background: var(--wood-dark);
+    padding: 0.75rem 2rem;
+}
+
+.site-header nav a {
+    color: #d4a96a;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 300;
+}
+
+.site-header nav a:hover { color: #fff; }
+
+/* ── HERO ── */
+.hero {
+    background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 60%, var(--wood-light) 100%);
+    color: #fff;
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+}
+
+.hero-inner {
+    position: relative;
+    max-width: var(--max-w);
+    margin: 0 auto;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fde9c9;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.9rem;
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fde9c9;
+    max-width: 560px;
+    margin: 0 auto 2rem;
+    font-style: italic;
+}
+
+.hero-meta {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.05em;
+}
+
+/* ── LAYOUT ── */
+.container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+}
+
+/* ── TYPOGRAPHY ── */
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--wood-dark);
+    margin: 3rem 0 1rem;
+    line-height: 1.3;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-bg);
+}
+
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--wood-mid);
+    margin: 2rem 0 0.75rem;
+}
+
+p {
+    margin-bottom: 1.1rem;
+}
+
+strong {
+    color: var(--wood-dark);
+    font-weight: 600;
+}
+
+em {
+    color: var(--muted);
+}
+
+ul, ol {
+    margin: 0.75rem 0 1.1rem 1.5rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* ── COMPONENTES ── */
+
+/* Nota pessoal */
+.nota-pessoal {
+    background: var(--accent-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--wood-dark);
+}
+
+.nota-pessoal::before {
+    content: '✦ Experiência do luthier';
+    display: block;
+    font-style: normal;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+/* Tabela comparativa */
+.tabela-comparativa {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2rem;
+    font-size: 0.95rem;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.tabela-comparativa thead {
+    background: var(--wood-dark);
+    color: #fff;
+}
+
+.tabela-comparativa th {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.tabela-comparativa td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.tabela-comparativa tr:nth-child(even) td {
+    background: var(--accent-bg);
+}
+
+.tabela-comparativa tr:last-child td {
+    border-bottom: none;
+}
+
+/* Card de madeira */
+.card-madeira {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 12px rgba(91,51,23,0.06);
+}
+
+.card-madeira h3 {
+    margin-top: 0;
+}
+
+.card-madeira .tag-uso {
+    display: inline-block;
+    background: var(--accent-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 2px;
+    margin-bottom: 0.75rem;
+}
+
+/* Destaque / callout */
+.callout {
+    background: var(--wood-dark);
+    color: #fde9c9;
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.callout p {
+    color: #fde9c9;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0;
+}
+
+/* CTA */
+.cta-box {
+    background: linear-gradient(135deg, var(--wood-dark), var(--wood-mid));
+    color: #fff;
+    padding: 2rem 2rem;
+    border-radius: var(--radius);
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.cta-box h3 {
+    color: #fde9c9;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.cta-box p {
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 1.25rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #c4813a;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+}
+
+.cta-btn:hover { background: #a8682e; }
+
+/* Analogia visual */
+.analogia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.analogia-item {
+    background: var(--surface);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.analogia-item .icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+.analogia-item strong { display: block; color: var(--wood-dark); margin-bottom: 0.25rem; font-size: 0.9rem; }
+.analogia-item span { font-size: 0.85rem; color: var(--muted); }
+
+/* Diagrama corte radial */
+.corte-diagram {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.corte-diagram svg { max-width: 100%; height: auto; }
+
+/* FAQ */
+.faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 1.25rem 0;
+}
+
+.faq-item:last-child { border-bottom: none; }
+
+.faq-item h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.05rem;
+    color: var(--wood-dark);
+}
+
+.faq-item p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+/* Conclusão */
+.conclusao {
+    background: var(--accent-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin: 2.5rem 0;
+}
+
+.conclusao h2 {
+    border: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.conclusao ul { margin-top: 0.75rem; }
+
+/* Institucional */
+.institucional {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.institucional h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    border: none;
+    padding: 0;
+}
+
+.institucional p { font-size: 0.9rem; color: var(--muted); }
+
+/* Figure */
+figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: italic;
+}
+
+/* =========================
+   RODAPÉ – LUTHIERIA BARATIERI
+   ========================= */
+
+   .footer {
+    background: linear-gradient(to top, #5c3b1e, #3e2813);
+    color: #f1f1f1;
+    padding: 40px 20px;
+    margin-top: 60px;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--cor-texto-claro);
+  }
+  
+  .footer a {
+    display: block;
+    color: #e0d6c8;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.2s;
+  }
+  
+  .footer a:hover {
+    color: var(--cor-texto-claro);
+    transform: translateX(3px);
+  }
+  
+  .footer-copy {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-local {
+    font-size: 13px;
+    color: #d6c6b4;
+  }
+  
+  .btn-footer {
+    display: inline-block;
+    background: #c89b6d;
+    color: #2b1a0d !important;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .btn-footer:hover {
+    background: #e0b382;
+  }
+
+
+
+@media (max-width: 768px) {
+    .analogia { grid-template-columns: 1fr; }
+    .hero { padding: 3.5rem 1.25rem 3rem; }
+    .tabela-comparativa { font-size: 0.82rem; }
+    .tabela-comparativa th, .tabela-comparativa td { padding: 0.6rem 0.7rem; }
+   
+    .footer {
+        text-align: center;
+        padding: 30px 15px;
+      }
+    
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+    
+      .footer-col {
+        width: 100%;
+        max-width: 300px;
+      }
+    
+      .footer h3 {
+        margin-bottom: 8px;
+      }
+    
+      .footer a {
+        margin-bottom: 6px;
+      }
+    
+      .btn-footer {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .afiliados {
+        margin-top: 8px;
+      }
+    
+      .footer-col {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        padding-top: 15px;
+      }
+    
+      .footer-col:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+}
