@@ -356,6 +356,29 @@ nav.serie-nav span {
 
 .conclusao ul { margin-top: 0.75rem; }
 
+/* Nota pessoal */
+.nota-pessoal {
+    background: var(--accent-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--wood-dark);
+}
+
+.nota-pessoal::before {
+    content: '✦ Experiência do luthier';
+    display: block;
+    font-style: normal;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
 
 /* CTA */
 .cta-box {
