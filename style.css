@@ -332,6 +332,44 @@ img {
     padding: 40px 20px;
 }
 
+.painel-os {
+    background: linear-gradient(135deg, #3d2814 0%, #5c3b1e 42%, #6d4a2a 100%);
+    color: #f5efe6;
+    padding: 40px 20px;
+}
+
+.painel-os h2 {
+    color: #f5efe6;
+}
+
+.painel-os .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.55);
+    color: #fff;
+    margin-top: 8px;
+}
+
+.painel-os .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+}
+
+.painel-os-inline-list {
+    margin: 6px 0 18px 0;
+    padding-left: 1.2rem;
+    line-height: 1.55;
+    font-size: 0.95rem;
+}
+
+.painel-os-inline-list li {
+    margin-bottom: 4px;
+}
+
+.painel-os img {
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    align-self: center;
+}
+
 .loja {
     background: linear-gradient(to bottom, #ffffff, #f4f0ea);
 }
