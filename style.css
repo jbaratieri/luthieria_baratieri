@@ -409,6 +409,193 @@ img {
 }
 
 /* =========================
+   FORMULÁRIO DE ENCOMENDA
+   ========================= */
+
+.encomenda-page {
+    background:
+        radial-gradient(ellipse 80% 50% at 10% 0%, rgba(166, 124, 82, 0.12), transparent 55%),
+        linear-gradient(180deg, #fff 0%, var(--cor-fundo) 40%, #ebe4da 100%);
+}
+
+.encomenda-intro {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.encomenda-eyebrow {
+    margin: 0 0 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+}
+
+.encomenda-intro h1 {
+    margin: 0 0 14px;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.encomenda-lead {
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+.encomenda-form-wrap {
+    padding-top: 10px;
+}
+
+.form-encomenda {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-encomenda .form-bloco {
+    margin: 0;
+    padding: 22px 20px 20px;
+    border: 1px solid #e0d6c8;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.form-encomenda legend {
+    padding: 0 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+}
+
+.form-encomenda .linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.form-encomenda .linha:last-child {
+    margin-bottom: 0;
+}
+
+.form-encomenda .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1 1 220px;
+    min-width: 0;
+}
+
+.form-encomenda .campo-full {
+    flex: 1 1 100%;
+    margin-bottom: 14px;
+}
+
+.form-encomenda .campo-full:last-child {
+    margin-bottom: 0;
+}
+
+.form-encomenda .campo-cep {
+    flex: 0 1 140px;
+}
+
+.form-encomenda .campo-numero {
+    flex: 0 1 110px;
+}
+
+.form-encomenda .campo-uf {
+    flex: 0 1 90px;
+}
+
+.form-encomenda .campo span {
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #4a3a2a;
+}
+
+.form-encomenda input,
+.form-encomenda select,
+.form-encomenda textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #cbbba8;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font-family: inherit;
+    font-size: 0.98rem;
+}
+
+.form-encomenda input:focus,
+.form-encomenda select:focus,
+.form-encomenda textarea:focus {
+    outline: 2px solid rgba(166, 124, 82, 0.45);
+    outline-offset: 1px;
+    border-color: var(--cor-secundaria);
+}
+
+.form-encomenda textarea {
+    resize: vertical;
+    min-height: 96px;
+}
+
+.form-encomenda .btn-primary {
+    align-self: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 14px 28px;
+    min-width: min(100%, 320px);
+}
+
+.form-encomenda .btn-primary:disabled {
+    opacity: 0.7;
+    cursor: wait;
+    transform: none;
+}
+
+.form-aviso {
+    margin: 0;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: #666;
+    text-align: center;
+}
+
+.form-status {
+    margin: 0;
+    min-height: 1.4em;
+    text-align: center;
+    color: var(--cor-vinho);
+    font-size: 0.95rem;
+}
+
+.form-honeypot {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+}
+
+@media (max-width: 640px) {
+    .form-encomenda .linha {
+        flex-direction: column;
+    }
+
+    .form-encomenda .campo-cep,
+    .form-encomenda .campo-numero,
+    .form-encomenda .campo-uf {
+        flex: 1 1 auto;
+    }
+}
+
+/* =========================
    SEO TEXTO
    ========================= */
 .seo-texto {

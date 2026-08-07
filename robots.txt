@@ -7,5 +7,9 @@ Disallow: /footer.js
 Disallow: /image-modal
 Disallow: /logos/
 
+# Formulário interno de encomenda (só link via WhatsApp)
+Disallow: /encomenda
+Disallow: /obrigado-encomenda
+
 # Aponta para o sitemap principal
 Sitemap: https://luthieriabaratieri.com.br/sitemap.xml

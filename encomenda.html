@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Encomenda | Luthieria Baratieri</title>
+    <meta name="description"
+        content="Formulário de cadastro para encomenda de instrumento personalizado na Luthieria Baratieri.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Jacir Paulo Baratieri">
+    <meta name="theme-color" content="#5c3b1e">
+
+    <link rel="canonical" href="https://luthieriabaratieri.com.br/encomenda">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <script async src="https://googletagmanager.com/gtag/js?id=G-PP8XBSX8MJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-PP8XBSX8MJ');
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="img/logotipo.png" alt="Luthieria Baratieri">
+                </a>
+            </div>
+
+            <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Menu de navegação"
+                aria-controls="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+            <nav class="menu" id="menu" aria-label="Principal">
+                <a href="/">Início</a>
+                <a href="/area-de-atuacao-luthieria">Atendimento</a>
+                <a href="/blog/">Blog</a>
+                <a href="https://loja.luthieriabaratieri.com.br">Loja</a>
+                <a href="https://metodo.luthieriabaratieri.com.br/metodo-baratieri-app-luthieria">Método</a>
+                <a href="https://painel.luthieriabaratieri.com.br/painel-os-baratieri">Painel OS</a>
+                <a href="/#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="encomenda-page">
+        <section class="encomenda-intro container">
+            <p class="encomenda-eyebrow">Luthieria Baratieri</p>
+            <h1>Cadastro de encomenda</h1>
+            <p class="encomenda-lead">
+                Preencha os dados abaixo para formalizar a encomenda do seu instrumento personalizado.
+                As informações ajudam a organizar a construção e a entrega com segurança.
+            </p>
+        </section>
+
+        <section class="container encomenda-form-wrap">
+            <form id="form-encomenda" action="https://formspree.io/f/mlgodnqv" method="POST" class="form-encomenda">
+
+                <input type="hidden" name="_subject" value="Nova encomenda — instrumento personalizado">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <fieldset class="form-bloco">
+                    <legend>Dados do cliente</legend>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>Nome completo *</span>
+                            <input type="text" name="nome" required autocomplete="name">
+                        </label>
+                        <label class="campo">
+                            <span>Data de nascimento *</span>
+                            <input type="date" name="nascimento" required>
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>CPF *</span>
+                            <input type="text" name="cpf" id="cpf" inputmode="numeric" placeholder="000.000.000-00"
+                                maxlength="14" required autocomplete="off">
+                        </label>
+                        <label class="campo">
+                            <span>Celular / WhatsApp *</span>
+                            <input type="tel" name="celular" id="celular" inputmode="numeric"
+                                placeholder="(00) 00000-0000" maxlength="15" required autocomplete="tel">
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo campo-full">
+                            <span>E-mail *</span>
+                            <input type="email" name="email" required autocomplete="email">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-bloco">
+                    <legend>Endereço</legend>
+
+                    <div class="linha">
+                        <label class="campo campo-cep">
+                            <span>CEP *</span>
+                            <input type="text" name="cep" id="cep" inputmode="numeric" placeholder="00000-000"
+                                maxlength="9" required autocomplete="postal-code">
+                        </label>
+                        <label class="campo">
+                            <span>Rua / Logradouro *</span>
+                            <input type="text" name="rua" id="rua" required autocomplete="street-address">
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo campo-numero">
+                            <span>Número *</span>
+                            <input type="text" name="numero" required autocomplete="off">
+                        </label>
+                        <label class="campo">
+                            <span>Complemento</span>
+                            <input type="text" name="complemento" autocomplete="off">
+                        </label>
+                        <label class="campo">
+                            <span>Bairro *</span>
+                            <input type="text" name="bairro" id="bairro" required>
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>Cidade *</span>
+                            <input type="text" name="cidade" id="cidade" required autocomplete="address-level2">
+                        </label>
+                        <label class="campo campo-uf">
+                            <span>UF *</span>
+                            <input type="text" name="uf" id="uf" maxlength="2" required autocomplete="address-level1">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-bloco">
+                    <legend>Dados do instrumento</legend>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>Tipo de instrumento *</span>
+                            <select name="tipo_instrumento" required>
+                                <option value="">Selecione…</option>
+                                <option value="Violão clássico (nylon)">Violão clássico (nylon)</option>
+                                <option value="Violão aço">Violão aço</option>
+                                <option value="Viola caipira">Viola caipira</option>
+                                <option value="Cavaquinho">Cavaquinho</option>
+                                <option value="Ukulele">Ukulele</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </label>
+                        <label class="campo">
+                            <span>Estilo / modelo combinado</span>
+                            <input type="text" name="estilo_modelo"
+                                placeholder="Ex.: clássico, folk, cutaway…">
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>Madeira do tampo</span>
+                            <input type="text" name="madeira_tampo" placeholder="Ex.: abeto, cedro…">
+                        </label>
+                        <label class="campo">
+                            <span>Laterais e fundo</span>
+                            <input type="text" name="madeira_laterais_fundo" placeholder="Ex.: jacarandá, mogno…">
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>Madeira do braço</span>
+                            <input type="text" name="madeira_braco" placeholder="Ex.: mogno, cedro, maple…">
+                        </label>
+                        <label class="campo">
+                            <span>Escala</span>
+                            <input type="text" name="madeira_escala" placeholder="Ex.: ébano, pau-ferro…">
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>Acabamento</span>
+                            <input type="text" name="acabamento" placeholder="Ex.: goma-laca, verniz natural…">
+                        </label>
+                        <label class="campo">
+                            <span>Cordas</span>
+                            <select name="cordas">
+                                <option value="">Selecione…</option>
+                                <option value="Nylon">Nylon</option>
+                                <option value="Aço">Aço</option>
+                                <option value="Outro / a definir">Outro / a definir</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="campo">
+                            <span>Entrega / retirada</span>
+                            <select name="entrega">
+                                <option value="">Selecione…</option>
+                                <option value="Retirada na luthieria">Retirada na luthieria</option>
+                                <option value="Envio pelos Correios">Envio pelos Correios</option>
+                                <option value="Transportadora">Transportadora</option>
+                                <option value="A combinar">A combinar</option>
+                            </select>
+                        </label>
+                        <label class="campo">
+                            <span>Prazo desejado (aproximado)</span>
+                            <input type="text" name="prazo_desejado" placeholder="Ex.: até dezembro / sem pressa">
+                        </label>
+                    </div>
+
+                    <label class="campo campo-full">
+                        <span>Preferências de som, estética ou detalhes combinados</span>
+                        <textarea name="preferencias" rows="4"
+                            placeholder="Descreva o que foi combinado na conversa: timbre, visual, escala, ponte, etc."></textarea>
+                    </label>
+
+                    <label class="campo campo-full">
+                        <span>Link de referência (foto, vídeo ou modelo)</span>
+                        <input type="url" name="link_referencia" placeholder="https://…">
+                    </label>
+
+                    <label class="campo campo-full">
+                        <span>Observações adicionais</span>
+                        <textarea name="observacoes" rows="3"
+                            placeholder="Qualquer informação extra útil para a encomenda"></textarea>
+                    </label>
+                </fieldset>
+
+                <p class="form-aviso">
+                    Seus dados serão usados apenas para formalizar e acompanhar esta encomenda na Luthieria Baratieri.
+                    Não compartilhamos essas informações com terceiros.
+                </p>
+
+                <button type="submit" class="btn btn-primary" id="btn-enviar-encomenda">Enviar cadastro da encomenda</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <p class="footer-copy">
+                    &copy; 2026 Luthieria Baratieri — Todos os direitos reservados
+                </p>
+                <p class="footer-local">
+                    Luthieria em Terra Roxa – Paraná, atendendo todo o Brasil.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="https://luthieriabaratieri.com.br/">Site oficial</a>
+                <a href="https://luthieriabaratieri.com.br/blog/">Blog de Luthieria</a>
+                <a href="https://loja.luthieriabaratieri.com.br/">Loja</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Ecossistema Baratieri</h3>
+                <a href="https://metodo.luthieriabaratieri.com.br/metodo-baratieri-app-luthieria" class="btn-footer">
+                    Método Baratieri
+                </a>
+                <a href="https://painel.luthieriabaratieri.com.br/painel-os-baratieri" class="btn-footer" target="_blank"
+                    rel="noopener">
+                    Painel OS Baratieri
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="float-whatsapp">
+        <a href="https://wa.me/5545920028659" rel="nofollow" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Fale com o Luthier</span>
+        </a>
+    </div>
+
+    <script>
+        (function () {
+            const form = document.getElementById('form-encomenda');
+            const statusEl = document.getElementById('form-status');
+            const btn = document.getElementById('btn-enviar-encomenda');
+            const cpf = document.getElementById('cpf');
+            const celular = document.getElementById('celular');
+            const cep = document.getElementById('cep');
+
+            function onlyDigits(value) {
+                return (value || '').replace(/\D/g, '');
+            }
+
+            function maskCPF(value) {
+                const d = onlyDigits(value).slice(0, 11);
+                return d
+                    .replace(/(\d{3})(\d)/, '$1.$2')
+                    .replace(/(\d{3})(\d)/, '$1.$2')
+                    .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+            }
+
+            function maskPhone(value) {
+                const d = onlyDigits(value).slice(0, 11);
+                if (d.length <= 10) {
+                    return d
+                        .replace(/(\d{2})(\d)/, '($1) $2')
+                        .replace(/(\d{4})(\d)/, '$1-$2');
+                }
+                return d
+                    .replace(/(\d{2})(\d)/, '($1) $2')
+                    .replace(/(\d{5})(\d)/, '$1-$2');
+            }
+
+            function maskCEP(value) {
+                const d = onlyDigits(value).slice(0, 8);
+                return d.replace(/(\d{5})(\d)/, '$1-$2');
+            }
+
+            cpf.addEventListener('input', function () {
+                this.value = maskCPF(this.value);
+            });
+
+            celular.addEventListener('input', function () {
+                this.value = maskPhone(this.value);
+            });
+
+            cep.addEventListener('input', function () {
+                this.value = maskCEP(this.value);
+            });
+
+            cep.addEventListener('blur', function () {
+                const digits = onlyDigits(this.value);
+                if (digits.length !== 8) return;
+
+                fetch('https://viacep.com.br/ws/' + digits + '/json/')
+                    .then(function (r) { return r.json(); })
+                    .then(function (data) {
+                        if (data.erro) return;
+                        document.getElementById('rua').value = data.logradouro || '';
+                        document.getElementById('bairro').value = data.bairro || '';
+                        document.getElementById('cidade').value = data.localidade || '';
+                        document.getElementById('uf').value = data.uf || '';
+                    })
+                    .catch(function () { /* silencioso */ });
+            });
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                statusEl.textContent = '';
+                btn.disabled = true;
+                btn.textContent = 'Enviando…';
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                }).then(function (response) {
+                    if (response.ok) {
+                        window.location.href = '/obrigado-encomenda';
+                        return;
+                    }
+                    throw new Error('Falha no envio');
+                }).catch(function () {
+                    statusEl.textContent = 'Não foi possível enviar. Tente novamente ou fale no WhatsApp.';
+                    btn.disabled = false;
+                    btn.textContent = 'Enviar cadastro da encomenda';
+                });
+            });
+        })();
+    </script>
+
+    <script>
+        (function () {
+            const toggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('menu');
+            const mq = window.matchMedia('(max-width: 768px)');
+
+            function setExpanded(open) {
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+
+            function closeMenu() {
+                if (!menu.classList.contains('active')) return;
+                menu.classList.remove('active');
+                setExpanded(false);
+            }
+
+            toggle.addEventListener('click', function () {
+                const wasOpen = menu.classList.contains('active');
+                menu.classList.toggle('active');
+                const nowOpen = menu.classList.contains('active');
+                setExpanded(nowOpen);
+                if (nowOpen && !wasOpen && mq.matches) {
+                    menu.querySelector('a')?.focus();
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (mq.matches) closeMenu();
+                });
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && menu.classList.contains('active') && mq.matches) {
+                    closeMenu();
+                    toggle.focus();
+                }
+            });
+
+            mq.addEventListener('change', function (e) {
+                if (!e.matches) {
+                    menu.classList.remove('active');
+                    setExpanded(false);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
